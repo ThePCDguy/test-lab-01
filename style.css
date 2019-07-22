@@ -1,6 +1,32 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-div {
+    text-align: center;
+}
+
 .dates {
     background-color: aliceblue;
 }
+
+h3 {
+    text-align: center;
+}
+
 
 .background {
     background-color: beige;
@@ -10,7 +36,20 @@
     background-color: blanchedalmond;
 }
 
+.service {
+    background-color: palegoldenrod;
+}
+
+.accolades {
+    background-color: cornsilk;
+}
+
+.legacy {
+    background-color: lightgoldenrodyellow;
+}
+
 footer {
     background-color: grey;
     color: white;
+    text-align: center;
 }
