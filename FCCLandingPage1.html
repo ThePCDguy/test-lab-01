@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WMS</title>
+    <title>Tea Counter</title>
 </head>
 <body>
     <header id="header">
         <img id="header-img" src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjSkZudqcvjAhVROBoKHWAsD8MQjRx6BAgBEAU&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fmountain%2520goat%2F&psig=AOvVaw3CsIv-W3xn66QEcmAGO1YN&ust=1563980953979837">
-        
+        <nav id="nav-bar">
+            <a href="#" id="Link1" class="nav-link">Link 1</a>
+            <a href="#" id="Link2" class="nav-link">Link 2</a>
+            <a href="#" id="Link3" class="nav-link">Link 3</a>
+            <a href="#" id="Link4" class="nav-link">Link 4</a>
+        </nav>
     </header>
+    <video id="video"> <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Fhuc6qOGNPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></video>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="name-label" id="name-label">Name
+            <input type="text" placeholder="Name" id="name" required></label>
+            <label for="email-label" id="email-label">E-mail
+            <input type="email" placeholder="E-mail Address" id="email" required></label>
     
+            <label for="number-label" id="number-label">How many cuppa?
+            <input type="number" placeholder="How many cuppa?" id="number" required min="0" max="20"></label>
+            
+            <label for="dropdown_label">Are you serious?</label>
+            <select name="serious?" id="dropdown">
+                <option value="Yes">Yee</option>
+                <option value="No">Hell Naw</option>
+            </select>
+            
+            <label for="checkbox">Which kinds did you have?</label>
+            <label for="Decaf"><input id="Decaf" type="checkbox" name="value" value="decaf"> Decaf</label>
+            <label for="English"><input id="EngBrek" type="checkbox" name="value" value="engbrek">English Breakfast</label>
+            <label for="Green"><input id="Green" type="checkbox" name="value" value="green">Green</label>
+            
+            <label for="radio_label">Are you going to have more today?</label>
+            <label for="radio">
+                <input type="radio" id="radio_label_yes" name="radio" value="yes">Ya
+                <input type="radio" id="radio_label_no" name="radio" value="no">Nah
+            </label>
+            
+            <label for="anymore">Any more type of tea you drank today?
+                    <textarea name="message" cols="30" rows="10" placeholder="List them out here, each on a new line" ></textarea>
+            </label>
+            
+            <input type="submit" id="submit" value="Done!">
+    </form>
 </body>
 </html>
