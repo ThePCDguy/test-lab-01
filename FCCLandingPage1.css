@@ -2,6 +2,40 @@
         width: 100%;
         position: fixed;
         top: 0;
-        background-color: black;
-        color: white;
+        background-color: yellow;
+        color: black;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+    .nav-bar a{
+        float: left
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .form {
+        border: 5px black;
+        border-radius: 2px;
+        background-color: blanchedalmond;
+    }
+
+    .main{
+        margin-top: 300px;
+        padding-top: 30px;
+    }
+
+    .body {
+        padding-top: 90px;
+    }
+
+    .header-img {
+        height: auto;
+        width: auto;
+        max-width: 30px;
+        max-height: 30px;
+        color: black;
     }

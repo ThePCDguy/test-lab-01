@@ -5,52 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/FCCLandingPage1.css">
+    
     <title>Tea Counter</title>
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjSkZudqcvjAhVROBoKHWAsD8MQjRx6BAgBEAU&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fmountain%2520goat%2F&psig=AOvVaw3CsIv-W3xn66QEcmAGO1YN&ust=1563980953979837">
+            
         <nav id="nav-bar" class="nav-bar">
-            <a href="#" id="Link1" class="nav-link">Link 1</a>
-            <a href="#" id="Link2" class="nav-link">Link 2</a>
-            <a href="#" id="Link3" class="nav-link">Link 3</a>
-            <a href="#" id="Link4" class="nav-link">Link 4</a>
+            <img id="header-img" class="header-img" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Tea_cup_icon.svg"> 
+            <a href="#video" id="Link1" class="nav-link">Video</a>
+            <a href="#formcorder" id="Link2" class="nav-link">Tea Recorder</a>
+            <a href="#status" id="Link3" class="nav-link">Your Tea Status</a>
+            <a href="#benefits" id="Link4" class="nav-link">How it helps the environment</a>
         </nav>
-        <br>
     </header>
-    <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Fhuc6qOGNPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <div class="body">
+        <div class="video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Fhuc6qOGNPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="formcorder">
+    <form id="form" action="https://www.freecodecamp.com/email-submit" class="form">
             <label for="name-label" id="name-label">Name
             <input type="text" placeholder="Name" id="name" required></label>
+            <br>
             <label for="email-label" id="email-label">E-mail
             <input type="email" placeholder="E-mail Address" id="email" required></label>
-    
+            <br>
             <label for="number-label" id="number-label">How many cuppa?
-            <input type="number" placeholder="How many cuppa?" id="number" required min="0" max="20"></label>
-            
+            <input type="number" placeholder="0" id="number" required min="0" max="20"></label>
+            <br>
             <label for="dropdown_label">Are you serious?</label>
             <select name="serious?" id="dropdown">
                 <option value="Yes">Yee</option>
                 <option value="No">Hell Naw</option>
             </select>
-            
-            <label for="checkbox">Which kinds did you have?</label>
-            <label for="Decaf"><input id="Decaf" type="checkbox" name="value" value="decaf"> Decaf</label>
-            <label for="English"><input id="EngBrek" type="checkbox" name="value" value="engbrek">English Breakfast</label>
-            <label for="Green"><input id="Green" type="checkbox" name="value" value="green">Green</label>
-            
-            <label for="radio_label">Are you going to have more today?</label>
-            <label for="radio">
-                <input type="radio" id="radio_label_yes" name="radio" value="yes">Ya
-                <input type="radio" id="radio_label_no" name="radio" value="no">Nah
-            </label>
-            
-            <label for="anymore">Any more type of tea you drank today?
-                    <textarea name="message" cols="30" rows="10" placeholder="List them out here, each on a new line" ></textarea>
-            </label>
-            
+            <br>
             <input type="submit" id="submit" value="Done!">
     </form>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="status">
+    <h2>
+        You have currently had <strong>5</strong> cups of tea
+    </h2>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="benefits">
+    <h2>
+        With <strong>5</strong> cups of Tea, you have:
+    </h2>
+    <br>
+    <div id="listofbenefits">
+    <ul>
+        <li>Planted 30 Trees</li>
+        <li>Used up 1000ml of water</li>
+        <li>Used up 100ml of milk</li>
+        <li>Had enough sugar to power a car for 1 day</li>
+        <li>Brought World Peace to 3 Planets</li>
+    </ul>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    </div>
 </body>
 </html>
