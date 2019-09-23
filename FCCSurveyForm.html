@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="FCCSurveyForm.css">
+</head>
+<body>
+    <div>
+        <h1 id="title">A New Project Form</h1>
+    </div>
+    <div id="intro">
+        <p id="description">
+            Got an idea you want to see come to life? Tell us about it, and we'll help you make it happen!
+        </p>
+    </div>
+    <div id="form">
+        <form id="survey-form">
+            <div id="base-form">
+                <label for="name-label" id="name-label">Name
+                <input type="text" placeholder="Name" id="name" required></label>
+                <br>
+                <label for="email-label" id="email-label">E-mail
+                <input type="email" placeholder="E-mail Address" id="email" required></label>
+            </div>
+        <br>
+            <div id="secondary-form">
+                <label for="number-label" id="number-label">How many ideas do you have?
+                <input type="number" placeholder="Number" id="number" required min="0" max="10"></label>
+                <label for="dropdown_label">Have you already planned it out?</label>
+                <select name="serious?" id="dropdown">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <label for="checkbox">How do we help?</label>
+                <label for="website"><input id="website" type="checkbox" name="value" value="website"> website</label>
+                <label for="androidapp"><input id="androidapp" type="checkbox" name="value" value="androidapp">Android App</label>
+                <label for="iosapp"><input id="iosapp" type="checkbox" name="value" value="iosapp">iOS App</label>
+                <label for="digitalmarketing"><input id="digitalmarketing" type="checkbox" name="value" value="digitalmarketing">Digital Marketing</label>
+                <label for="creativemedia"><input id="creativemedia" type="checkbox" name="value" value="creativemedia">Creative Media</label>
+                <label for="softwaresystem"><input id="softwaresystem" type="checkbox" name="value" value="softwaresystem">Software System</label>
+
+                <label for="radio_label">How shall we talk?</label>
+                <label for="radio">
+                    <input type="radio" id="radio_label_email" name="radio" value="email">E-mail
+                    <input type="radio" id="radio_label_sms_text" name="radio" value="smstext">SMS Text
+                    <input type="radio" id="radio_label_meeting" name="radio" value="f2fmeeting">Face-to-face Meeting
+                </label>
+
+                <label for="anymore">Outline your projects below:
+                    <textarea name="message" cols="30" rows="10" placeholder="List them out here, each on a new line" ></textarea>
+                </label>
+            </div>
+            
+            <div id="submit_project">
+                <input type="submit" id="submit" value="Done!">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
