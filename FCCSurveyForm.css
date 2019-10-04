@@ -88,6 +88,10 @@ input[type="checkbox"] {
   padding-bottom: 10px;
 }
 
+#base-form {
+  background-color: antiquewhite;
+}
+
 @media screen and (max-width: 833px) {
   .input-field {
     width: 80%;
