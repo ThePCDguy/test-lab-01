@@ -9,12 +9,6 @@ body {
   height: 100%;
 }
 
-header {
-  font-size: 2em;
-  font-weight: bold;
-  margin: 20px;
-}
-
 #survey-form {
   background-color: rgb(250, 250, 250);
   margin: 0 auto;
@@ -51,12 +45,7 @@ header {
   border-radius: 2px;
 }
 
-#userAge {
-  width: 40px;
-}
-
-.userRatings,
-input[type="checkbox"] {
+.radiooption, input[type="checkbox"] {
   float: left;
   margin-right: 5px;
 }
@@ -84,17 +73,27 @@ input[type="checkbox"] {
 
 .radio, .checkbox {
   position: relative;
-  left: -43px;
   margin-left: 10px;
   display: block;
   padding-bottom: 10px;
 }
 
-#base-form {
+/*#base-form {
   background-color: antiquewhite;
-
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  opacity: inherit;
 }
 
+#secondary-form {
+  background-color: antiquewhite;
+  opacity: inherit;
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+}
+*/
 @media screen and (max-width: 833px) {
   .input-field {
     width: 80%;

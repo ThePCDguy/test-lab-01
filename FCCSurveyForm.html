@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FCC Survey Form</title>
+    <title>New Project Form</title>
     <link rel="stylesheet" type="text/css" href="FCCSurveyForm.css">
 </head>
 <body>
@@ -19,42 +19,49 @@
     <div id="form">
         <form id="survey-form">
             <div id="base-form">
-                <label for="name-label" id="name-label" class="labels">Name
-                <input type="text" placeholder="Name" id="name" required class="rightTab"></label>
+                <div class="labels"><label for="name-label" id="name-label">Name</div>
+                <div class="rightTab"><input autofocus type="text" placeholder="Name" id="name" required class="input-field"></label></div>
                 <br>
-                <label for="email-label" id="email-label" class="labels">E-mail
-                <input type="email" placeholder="E-mail Address" id="email" required class="rightTab"></label>
+                <div class="labels"><label for="email-label" id="email-label">E-mail</div>
+                <div class="rightTab"><input type="email" placeholder="E-mail Address" id="email" required class="input-field"></label></div>
             </div>
         <br>
             <div id="secondary-form">
-                <label for="number-label" id="number-label" class="labels">How many ideas do you have?
-                <input type="number" placeholder="Number" id="number" required min="0" max="10" class="rightTab"></label>
-                <label for="dropdown_label" class="labels">Have you already planned it out?</label>
-                <select name="serious?" id="dropdown">
+                <div class="labels"><label for="number-label" id="number-label">How many ideas do you have?</div>
+                <div class="rightTab"><input type="number" placeholder="Number" id="number" required min="0" max="10" class="input-field"></label></div>
+                <br><br>
+                <div class="labels"><label for="dropdown-label" id="dropdown">Have you already planned it out?</label></div>
+                <div class="rightTab"><select name="serious?" id="dropdown" class="dropdown">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>
-                <label for="checkbox" class="labels">How do we help?</label>
-                <label for="website"><input id="website" type="checkbox" name="value" value="website"> website</label>
-                <label for="androidapp"><input id="androidapp" type="checkbox" name="value" value="androidapp">Android App</label>
-                <label for="iosapp"><input id="iosapp" type="checkbox" name="value" value="iosapp">iOS App</label>
-                <label for="digitalmarketing"><input id="digitalmarketing" type="checkbox" name="value" value="digitalmarketing">Digital Marketing</label>
-                <label for="creativemedia"><input id="creativemedia" type="checkbox" name="value" value="creativemedia">Creative Media</label>
-                <label for="softwaresystem"><input id="softwaresystem" type="checkbox" name="value" value="softwaresystem">Software System</label>
-
-                <label for="radio_label" class="labels">How shall we talk?</label>
-                <label for="radio">
-                    <input type="radio" id="radio_label_email" name="radio" value="email">E-mail
-                    <input type="radio" id="radio_label_sms_text" name="radio" value="smstext">SMS Text
-                    <input type="radio" id="radio_label_meeting" name="radio" value="f2fmeeting">Face-to-face Meeting
+                </div>
+                <br><br>
+                <div class="labels"><label for="checkbox">How do we help?</label></div>
+                <div class="rightTab">
+                    <label for="website"><input id="website" type="checkbox" name="value" value="website" class="checkbox"> Website</label> <br>
+                    <label for="androidapp"><input id="androidapp" type="checkbox" name="value" value="androidapp" class="checkbox">Android App</label><br>
+                    <label for="iosapp"><input id="iosapp" type="checkbox" name="value" value="iosapp" class="checkbox">iOS App</label><br>
+                    <label for="digitalmarketing"><input id="digitalmarketing" type="checkbox" name="value" value="digitalmarketing" class="checkbox">Digital Marketing</label><br>
+                    <label for="creativemedia"><input id="creativemedia" type="checkbox" name="value" value="creativemedia"class="checkbox">Creative Media</label><br>
+                    <label for="softwaresystem"><input id="softwaresystem" type="checkbox" name="value" value="softwaresystem" class="checkbox">Software System</label><br>
+                </div>
+                <br><br>
+                <div class="labels"><label for="radio_label">How shall we talk?</label></div>
+                <div class="rightTab">
+                <div class="radio"><label for="radio">
+                    <input type="radio" id="radio_label_email" name="radio" value="email" class="radiooption">E-mail<br>
+                    <input type="radio" id="radio_label_sms_text" name="radio" value="smstext" class="radiooption">SMS Text<br>
+                    <input type="radio" id="radio_label_meeting" name="radio" value="f2fmeeting" class="radiooption">Face-to-face Meeting<br>
                 </label>
-
-                <label for="anymore" class="labels">Outline your projects below:
-                    <textarea name="message" cols="30" rows="10" placeholder="List them out here, each on a new line" ></textarea>
-                </label>
-            </div>
-            
-            <div id="submit_project">
+                </div>
+                </div>
+                <br><br>
+                <div class="labels"><label for="anymore">Outline your projects here:</label></div>
+                <div class="rightTab"><textarea name="message" cols="30" rows="10" placeholder="List them out here, each on a new line" class="input-field"></textarea></div>
+                </div>
+                <br>
+                <div id="submit_project">
                 <input type="submit" id="submit" value="Done!">
             </div>
         </form>
