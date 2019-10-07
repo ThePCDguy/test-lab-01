@@ -19,22 +19,22 @@
     <div id="form">
         <form id="survey-form">
             <div id="base-form">
-                <label for="name-label" id="name-label">Name
-                <input type="text" placeholder="Name" id="name" required></label>
+                <label for="name-label" id="name-label" class="labels">Name
+                <input type="text" placeholder="Name" id="name" required class="rightTab"></label>
                 <br>
-                <label for="email-label" id="email-label">E-mail
-                <input type="email" placeholder="E-mail Address" id="email" required></label>
+                <label for="email-label" id="email-label" class="labels">E-mail
+                <input type="email" placeholder="E-mail Address" id="email" required class="rightTab"></label>
             </div>
         <br>
             <div id="secondary-form">
-                <label for="number-label" id="number-label">How many ideas do you have?
-                <input type="number" placeholder="Number" id="number" required min="0" max="10"></label>
-                <label for="dropdown_label">Have you already planned it out?</label>
+                <label for="number-label" id="number-label" class="labels">How many ideas do you have?
+                <input type="number" placeholder="Number" id="number" required min="0" max="10" class="rightTab"></label>
+                <label for="dropdown_label" class="labels">Have you already planned it out?</label>
                 <select name="serious?" id="dropdown">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>
-                <label for="checkbox">How do we help?</label>
+                <label for="checkbox" class="labels">How do we help?</label>
                 <label for="website"><input id="website" type="checkbox" name="value" value="website"> website</label>
                 <label for="androidapp"><input id="androidapp" type="checkbox" name="value" value="androidapp">Android App</label>
                 <label for="iosapp"><input id="iosapp" type="checkbox" name="value" value="iosapp">iOS App</label>
@@ -42,14 +42,14 @@
                 <label for="creativemedia"><input id="creativemedia" type="checkbox" name="value" value="creativemedia">Creative Media</label>
                 <label for="softwaresystem"><input id="softwaresystem" type="checkbox" name="value" value="softwaresystem">Software System</label>
 
-                <label for="radio_label">How shall we talk?</label>
+                <label for="radio_label" class="labels">How shall we talk?</label>
                 <label for="radio">
                     <input type="radio" id="radio_label_email" name="radio" value="email">E-mail
                     <input type="radio" id="radio_label_sms_text" name="radio" value="smstext">SMS Text
                     <input type="radio" id="radio_label_meeting" name="radio" value="f2fmeeting">Face-to-face Meeting
                 </label>
 
-                <label for="anymore">Outline your projects below:
+                <label for="anymore" class="labels">Outline your projects below:
                     <textarea name="message" cols="30" rows="10" placeholder="List them out here, each on a new line" ></textarea>
                 </label>
             </div>

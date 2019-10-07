@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
+  <div class="grid-item"><label for="name-label" id="name-label" class="labels">Name</div>
+  <div class="grid-item"><input type="text" placeholder="Name" id="name" required class="rightTab"></label></div>
+  <div class="grid-item"><label for="email-label" id="email-label" class="labels">E-mail</div>  
+  <div class="grid-item"><input type="email" placeholder="E-mail Address" id="email" required class="rightTab"></label></div> 
+</div>
+<br><br>
+<div class="grid-container">
+  <div class="grid-item"><label for="number-label" id="number-label" class="labels">How many ideas do you have?</div>
+  <div class="grid-item"><input type="number" placeholder="Number" id="number" required min="0" max="10" class="rightTab"></label></div>
+  <div class="grid-item"><label for="dropdown_label" class="labels">Have you already planned it out?</label></div>  
+  <div class="grid-item"><select name="serious?" id="dropdown"><option value="Yes">Yes</option><option value="No">No</option></select></div> 
+  <div class="grid-item"><label for="checkbox" class="labels">How do we help?</label></div>
+  <div class="grid-item">
+  	<label for="website"><input id="website" type="checkbox" name="value" value="website"> website</label><br>
+   	<label for="androidapp"><input id="androidapp" type="checkbox" name="value" value="androidapp">Android App</label><br>
+    <label for="iosapp"><input id="iosapp" type="checkbox" name="value" value="iosapp">iOS App</label><br>
+    <label for="digitalmarketing"><input id="digitalmarketing" type="checkbox" name="value" value="digitalmarketing">Digital Marketing</label><br>
+    <label for="creativemedia"><input id="creativemedia" type="checkbox" name="value" value="creativemedia">Creative Media</label><br>
+    <label for="softwaresystem"><input id="softwaresystem" type="checkbox" name="value" value="softwaresystem">Software System</label><br>
+   </div>
+   
+  <div class="grid-item"><label for="radio_label" class="labels">How shall we talk?</label></div>
+  <div class="grid-item"><label for="radio">
+                    <input type="radio" id="radio_label_email" name="radio" value="email">E-mail<br>
+                    <input type="radio" id="radio_label_sms_text" name="radio" value="smstext">SMS Text<br>
+                    <input type="radio" id="radio_label_meeting" name="radio" value="f2fmeeting">Face-to-face Meeting<br>
+                </label></div>
+  <div class="grid-item"><label for="anymore" class="labels">Outline your projects below:</label></div>
+  <div class="grid-item"><textarea name="message" cols="30" rows="10" placeholder="List them out here, each on a new line" ></textarea></div>
+</div>
+
+</body>
+</html>
