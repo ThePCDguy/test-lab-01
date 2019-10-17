@@ -2,14 +2,8 @@
 .item2{background:LightSalmon;}
 .item3{background:PaleTurquoise;}
 .item4{background:LightPink;}
-
-.item5 {
-  background: PaleGreen;
-  /* add your code below this line */
-  
-  
-  /* add your code above this line */
-}
+.item5{background:PaleGreen;}
+.item6{background:lightgrey;};
 
 .container {
   font-size: 40px;
@@ -20,4 +14,36 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px;
+}
+
+@media (max-width: 300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item1{
+    background: black;
+    color: white;
+  }
+  .item2{
+    background: black;
+    color: white;
+  }
+  .item3{
+    background: black;
+    color: white;
+  }
+  .item4{
+    background: black;
+    color: white;
+  }
+  .item5{
+    background: black;
+    color: white;
+  }
+  .item6{
+    background: black;
+    color: white;
+  }
 }
