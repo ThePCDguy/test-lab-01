@@ -3,23 +3,22 @@
 .item3{background:PaleTurquoise;}
 .item4{background:LightPink;}
 .item5{background:PaleGreen;}
-.item6{background:lightgrey;};
+.item6{background:lightgray;}
 
 .container {
   font-size: 40px;
-  min-height: 300px;
+  min-height: 100px;
   width: 100%;
   background: LightGray;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 5fr));
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
 
 @media (max-width: 300px) {
   .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
   }
 
   .item1{
