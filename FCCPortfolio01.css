@@ -6,8 +6,14 @@
 html{
     box-sizing: border-box;
     font-family: Verdana, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #navbar {
     background-color: #333333;
     position: fixed;
@@ -16,7 +22,7 @@ html{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    
+    z-index: 1;
   }
   
   #navbar a {
@@ -34,6 +40,7 @@ html{
     color: black;
   }
 
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~WELCOME SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   #welcome-section {
       display: flex;
       flex-direction: column;
@@ -62,31 +69,78 @@ html{
     background-color: rgba(0,0,0, 0.1);
   }
 
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROJECTS~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   #projects {
-    background-color: yellowgreen;
-    padding: 0;
+    background-color: rgb(252, 238, 214);
+    padding-top: 50px;
     margin: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: 100%;
     text-align: center;
   }
 
   #project-header {
+    color: red;
+    font-size: 40px;
+    font-style: italic;
+  }
+
+  .project-tile {
+    background: grey;
+    opacity: 0.8;
+  }
+
+  .project-tile:hover {
+    opacity: 1;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 5rem;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: whitesmoke;
+  }
+
+  .code {
+    color: gray;
+    transition: color 0.3s ease-out;
+  }
+  
+  .project-tile:hover .code {
     color: white;
   }
 
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~CONTACT ME~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   footer {
     font-weight: 300;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 0;
     background: grey;
     border-top: 4px solid red;
-
   }
   
   footer > p {
